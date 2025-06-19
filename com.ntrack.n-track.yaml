@@ -12,6 +12,8 @@ finish-args:
   - --filesystem=home
   - --env=VK_ICD_FILENAMES=/app/share/vulkan/icd.d
   - --env=VK_LAYER_PATH=/app/share/vulkan/explicit_layer.d
+  - --talk-name=org.freedesktop.ReserveDevice1.*
+  - --own-name=org.freedesktop.ReserveDevice1.*
 modules:
   - name: ntrack
     buildsystem: simple
@@ -31,15 +33,15 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        url: https://ntrack.com/flathub/n-track_aarch64_flathub-10.2.2-9980.zip
-        sha256: 04c11334e49cd2e1f6840e1961c3950d831c22658cf327c2242e4aa6dd5ee949
+        url: https://ntrack.com/flathub/n-track_aarch64_flathub-10.2.2-9992.zip
+        sha256: b907d8edb889b1cc6fe4597dbc05f253ebec999a8c39ba8fbbdae39272ec87be
         dest-filename: ntrack_flathub.zip
         strip-components: 1
       - type: archive
         only-arches:
           - x86_64
-        url: https://ntrack.com/flathub/n-track_x86_64_flathub-10.2.2-9980.zip
-        sha256: 60fa5fa0252d74c15e14e71814965551d9c9608dfa03ad74b4760b4d99a44f5d
+        url: https://ntrack.com/flathub/n-track_x86_64_flathub-10.2.2-9992.zip
+        sha256: aeeedd559f53d508ff2e4ed5f839f81dcb863ee2d20d2e00de1f5fa6a98f933e
         dest-filename: ntrack_flathub.zip
         strip-components: 1
 
