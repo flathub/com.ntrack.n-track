@@ -23,6 +23,22 @@ modules:
       - install -Dm644 ${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
       - install -Dm644 ${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - install -Dm644 512x512.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
+      - install -Dm644 n-track.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml
+      - install -Dm644 mimeIcon16x16.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/mimetypes/${FLATPAK_ID}.application-x-ntrack-project.png
+      - install -Dm644 mimeIcon32x32.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/mimetypes/${FLATPAK_ID}.application-x-ntrack-project.png
+      - install -Dm644 mimeIcon48x48.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/mimetypes/${FLATPAK_ID}.application-x-ntrack-project.png
+      - install -Dm644 mimeIcon64x64.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/mimetypes/${FLATPAK_ID}.application-x-ntrack-project.png
+      - install -Dm644 mimeIcon128x128.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/mimetypes/${FLATPAK_ID}.application-x-ntrack-project.png
+      - install -Dm644 mimeIcon16x16.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/mimetypes/${FLATPAK_ID}.application-x-ntrack-packed-project.png
+      - install -Dm644 mimeIcon32x32.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/mimetypes/${FLATPAK_ID}.application-x-ntrack-packed-project.png
+      - install -Dm644 mimeIcon48x48.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/mimetypes/${FLATPAK_ID}.application-x-ntrack-packed-project.png
+      - install -Dm644 mimeIcon64x64.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/mimetypes/${FLATPAK_ID}.application-x-ntrack-packed-project.png
+      - install -Dm644 mimeIcon128x128.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/mimetypes/${FLATPAK_ID}.application-x-ntrack-packed-project.png
+      - install -Dm644 mimeIcon16x16.png ${FLATPAK_DEST}/share/icons/hicolor/16x16/mimetypes/${FLATPAK_ID}.application-x-dawproject.png
+      - install -Dm644 mimeIcon32x32.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/mimetypes/${FLATPAK_ID}.application-x-dawproject.png
+      - install -Dm644 mimeIcon48x48.png ${FLATPAK_DEST}/share/icons/hicolor/48x48/mimetypes/${FLATPAK_ID}.application-x-dawproject.png
+      - install -Dm644 mimeIcon64x64.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/mimetypes/${FLATPAK_ID}.application-x-dawproject.png
+      - install -Dm644 mimeIcon128x128.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/mimetypes/${FLATPAK_ID}.application-x-dawproject.png
       - mkdir -p /app/bin /app/share/vulkan
       - ln -s /usr/lib/${FLATPAK_ARCH}-linux-gnu/GL/vulkan/implicit_layer.d /app/share/vulkan/implicit_layer.d
       - ln -s /usr/lib/${FLATPAK_ARCH}-linux-gnu/GL/vulkan/icd.d /app/share/vulkan/icd.d
@@ -33,15 +49,15 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        url: https://ntrack.com/flathub/n-track_aarch64_flathub-10.2.2-10197.zip
-        sha256: a0e15d27f24134f7048b62544f5aeed409e557cee46f39e549fd081707897b6e
+        url: https://ntrack.com/flathub/n-track_aarch64_flathub-10.2.2-10223.zip
+        sha256: 9c1710eb805894287a5293cccdffef4de551487937601e882fc21d80c8b56986
         dest-filename: ntrack_flathub.zip
         strip-components: 1
       - type: archive
         only-arches:
           - x86_64
-        url: https://ntrack.com/flathub/n-track_x86_64_flathub-10.2.2-10197.zip
-        sha256: ad796244b7151656e55e392125591d8e64065e10bbc1878a52cf47f0cfbc19f4
+        url: https://ntrack.com/flathub/n-track_x86_64_flathub-10.2.2-10223.zip
+        sha256: eba51a730211f9e9370397f0951b44c336a899f5550f73b15e9e74b0da42bb3a
         dest-filename: ntrack_flathub.zip
         strip-components: 1
 
