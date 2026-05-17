@@ -1,7 +1,7 @@
 app-id: com.ntrack.n-track
 runtime: org.freedesktop.Platform
 sdk: org.freedesktop.Sdk
-runtime-version: "24.08"
+runtime-version: "25.08"
 command: n-TrackStudio
 finish-args:
   - --share=ipc
