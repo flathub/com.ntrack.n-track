@@ -3,6 +3,8 @@ runtime: org.freedesktop.Platform
 sdk: org.freedesktop.Sdk
 runtime-version: "24.08"
 command: n-TrackStudio
+tags:
+  - proprietary
 finish-args:
   - --share=ipc
   - --share=network
