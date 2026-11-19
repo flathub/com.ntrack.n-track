@@ -52,15 +52,15 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        url: https://ntrack.com/flathub/n-track_aarch64_flathub-11.0.0-11573.zip
-        sha256: 4d664991d8875918e9ba8defaedee590b873cf05e33ecc8098032f2a87a15989
+        url: https://ntrack.com/flathub/n-track_aarch64_flathub-11.0.0-11576.zip
+        sha256: 1ff8f8391447c4017773d22a6d70364ee4cd0a667c5b1f1c7ed49e2a1e4a8692
         dest-filename: ntrack_flathub.zip
         strip-components: 1
       - type: archive
         only-arches:
           - x86_64
-        url: https://ntrack.com/flathub/n-track_x86_64_flathub-11.0.0-11573.zip
-        sha256: 32ea4d59f1875d6e33dd0718146298290cdfe119873101e0f2b172687200bbfa
+        url: https://ntrack.com/flathub/n-track_x86_64_flathub-11.0.0-11576.zip
+        sha256: c554aa7958555271e664582f533e7eca91422edc05a806b46e42efbb978a93c1
         dest-filename: ntrack_flathub.zip
         strip-components: 1
 
